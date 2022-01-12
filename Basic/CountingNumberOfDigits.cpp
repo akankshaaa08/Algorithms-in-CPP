@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-//-------------ITERATIVE APPROACH--------
+//-------------ITERATIVE APPROACH---------
 //T.C => O(N)
 int count_iteratively (int n)
 {
