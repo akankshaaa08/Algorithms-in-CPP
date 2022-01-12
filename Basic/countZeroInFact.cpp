@@ -13,7 +13,7 @@
      2. Idea: count the pair (2,5) for counting the zero
      3. The number of 5s will always be less than number of 2s, hence count only 5
      4. Number of times 5 occur in a number N is N/5
-     5. After reaching 25, 5 will occur 2 times in any prime factorization, hence, N/25
+     5. After reaching 25, 5 will occur 2 times in any prime factorization, hence , N/25
 
      T.C ==> O(log base 5 N)
  
