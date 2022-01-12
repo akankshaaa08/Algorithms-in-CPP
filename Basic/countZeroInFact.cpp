@@ -1,4 +1,12 @@
-//APPROACH
+//Naive Approach
+/**
+ 1. Calculate factorial
+ 2. Count trailing zeroes
+
+ T.C ==> O(N^2) or O(N)
+ * /
+
+//Optimized APPROACH
 /**
  * 
      1. Every 5th number in a factorial has prime factor 5
@@ -10,6 +18,8 @@
      T.C ==> O(log base 5 N)
  
 */
+
+
 #include<iostream>
 #include<cmath>
 using namespace std;
@@ -20,7 +30,6 @@ int count_zeroes(int num)
     for(int i=5 ; i<=num ; i=i*5)
     {
         count = count + (num/i);
-        cout<<"duhd";
     }
 
     return count;
