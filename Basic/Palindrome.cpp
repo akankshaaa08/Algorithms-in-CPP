@@ -35,7 +35,7 @@ int palindrome_numbers(int num, int len)
     }
 
     if(rev==num)
-        cout<<"The number is a Panlindrome!";
+        cout<<"The number is a Panlindrome! ";
     else    
         cout<<"The number is not a Panlindrome!";
 
