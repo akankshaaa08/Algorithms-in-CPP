@@ -3,7 +3,7 @@ using namespace std;
 
 bool checkBit_leftShift (int num, int k)
 {
-    if(num & (1<<(k-1)) !=0)     // using left shift
+    if(num & (1<<(k-1)) !=0)     //  using left shift
         return true;
     else
         return false;
@@ -11,7 +11,7 @@ bool checkBit_leftShift (int num, int k)
 
 bool checkBit_rightShift (int num, int k)
 {
-    if( (num>>(k-1)) & 1 !=0)     // using left shift
+    if( (num>>(k-1)) & 1 !=0)     //  using left shift
         return true;
     else
         return false;
