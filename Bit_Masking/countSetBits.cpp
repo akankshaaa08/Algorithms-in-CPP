@@ -19,7 +19,8 @@ int countSetBits_naive (int num)
 
 //------------BRIAN KERNINGAM'S ALGORITHM------------
 //T.C --> O(total number of SET bits)
-//Basic Idea: If we subtract 1 from any number, the rightmost SET bit becomes 0
+//Basic Idea: If we subtract 1 from any number, the rightmost SET bit becomes 0 and rest bits become 1
+//Example: 8= 1000, 7= 0111
 int countSetBits_brian(int num)
 {
     int count = 0;
