@@ -9,6 +9,14 @@ void forward_count(int num)
     cout<<num<<" ";
 }
 
+void forward_tail(int num, int k)
+{
+    if(num<0)
+        return;
+    cout<<k<<" ";
+    forward_tail(num-1, k+1);
+}
+
 void backward_count(int num)
 {
     if (num<0)
@@ -24,8 +32,12 @@ int main()
     cout<<"Enter the number: ";
     cin>>num;
 
-    cout<<"Printing numbers from 1 to n:"<<endl;
+    cout<<"Printing numbers from 1 to n: (Non-tail Recursive)"<<endl;
     forward_count(num);
+
+    cout<<"\n\nPrinting numbers from 1 to n: (Tail Recursive)"<<endl;
+    forward_tail(num,0);
+
     cout<<"\n\nPrinting numbers from n to 1:"<<endl;
     backward_count(num);
 
