@@ -9,16 +9,17 @@ void ToH(int n, char A, char B, char C)
         cout<<"Move 1 from " <<  A << " to " << C << endl; 
         return; 
     } 
+    
     ToH(n-1, A, C, B); 
     cout<<"Move " << n << " from " <<  A << " to " << C << endl; 
     ToH(n-1, B, A, C); 
 }
 	
-int main() {
-	
-	int n;
+int main() 
+{	
+    int n;
     cout<<"Enter number of disc: ";
     cin>>n;
     ToH(n, 'A', 'B', 'C'); 
-	return 0;
+    return 0;
 }
