@@ -16,9 +16,9 @@ void ToH(int n, char A, char B, char C)
 	
 int main() {
 	
-	int n = 2; 
-    
+	int n;
+    cout<<"Enter number of disc: ";
+    cin>>n;
     ToH(n, 'A', 'B', 'C'); 
-	
 	return 0;
 }
