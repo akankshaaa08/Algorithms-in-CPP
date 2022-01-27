@@ -13,5 +13,5 @@ int main()
     string str;
     cout<<"Enter the string: ";
     cin>>str;
-    cout<<"The given is "<<(palindrome(str,0,str.length()-1) ? "a Palindrome" : "Not a Palindrome");
+    cout<<"The given string is"<<(palindrome(str,0,str.length()-1) ? "a Palindrome" : "Not a Palindrome");
 }
