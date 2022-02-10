@@ -7,7 +7,7 @@ int BSearch(int ar[], int low, int high,  int key)
 {
     while(low <= high)
     {
-        int mid = low + (high-low)/2;           // To avoid any overflow
+        int mid = low + (high-low)/2;           // To avoid any overflow  // if duplicate values are present then the index of first occurence is returned beacuse, by default division gives floor values
         
         if(key==ar[mid])
             return mid;
