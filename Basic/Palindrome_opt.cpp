@@ -7,7 +7,7 @@ bool palindrome(int x)
 {
     // if x is a negative number, it is not a palindrome
     // if x%10 == 0, the first digit should also be zero 
-    if(x<0 || ( x!=0 && (x%10 ==0) ) )
+    if(x<0 || ( x!=0 && (x%10 ==0) )  )
             return false;
 
     int rev = 0;
