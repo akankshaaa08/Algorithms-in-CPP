@@ -1,4 +1,4 @@
-//T.C ==> O(log n)
+//T.C ==> O(n)
 
 #include<iostream>
 using namespace std;
