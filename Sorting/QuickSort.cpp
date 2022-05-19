@@ -1,5 +1,6 @@
 //T.C => O(n log(n) )
 //S.C => O(log n)
+//Inplace Sorting
 
 #include<iostream>
 using namespace std;
@@ -9,11 +10,11 @@ int Partition(int ar[] , int s , int e)
     int pivot = ar[e];
     int pIndex = s ;
  
-    for(int i=s ; i<e; i++)
+    for(int i=s ; i<e-1; i++)
     {
         if(ar[i]<pivot)
         {
-            swap(ar[i],ar[pIndex]);
+            swap(ar[i],ar[pIndex]);                 //places elements less than pivot to its left
             pIndex++;
         }
     }
