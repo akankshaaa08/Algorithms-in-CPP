@@ -1,6 +1,6 @@
 /*
 Assumption: The matrix is row wise sorted
-T.C ==> O(r)
+T.C ==> O(r * log(max-min) * log c)
 */
 
 #include<iostream>
