@@ -16,8 +16,8 @@ void spiral(vector<int> arr[], int row , int col)
         
         top++;
 
-        for(int i=top; i<=bottom ; i++)             //left
-            cout<<arr[i][right]<<" "; //bottom
+        for(int i=top; i<=bottom ; i++)             //right
+            cout<<arr[i][right]<<" "; 
         
         right--;
 
@@ -31,7 +31,7 @@ void spiral(vector<int> arr[], int row , int col)
 
         if(left<=right)
         {
-            for(int i=bottom ; i>=top ; i--)           //right
+            for(int i=bottom ; i>=top ; i--)           //left
                 cout<<arr[i][left]<<" ";
 
             left++;
