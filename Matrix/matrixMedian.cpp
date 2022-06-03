@@ -30,7 +30,7 @@ int median(vector<int> ar[], int row, int col)
 
         for(int i=0; i<row ; i++)
             median_pos += upper_bound(ar[i], ar[i]+col, median_element) - ar[i] ;                 //calculating number of elements smaller than or equal to calculated median value
-                                                                                                        // i.e median position
+                                                                                                        // i.e finding median position
                                                                                                                 //desired value = midPos
         
         if (median_pos < midPos)                            //decreasing the search space like in binary search
